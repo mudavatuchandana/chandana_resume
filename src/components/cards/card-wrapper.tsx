@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
 const shineMaskImage = `
@@ -14,6 +14,14 @@ interface CardWrapperProps {
 
 export default function CardWrapper({ children }: CardWrapperProps) {
   const { resolvedTheme } = useTheme();
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   return (
     <div className="group w-full h-full relative overflow-hidden rounded-3xl p-px dark:bg-white/10 bg-white/60">
@@ -47,7 +55,7 @@ export default function CardWrapper({ children }: CardWrapperProps) {
             className="absolute inset-0"
             style={{
               background: `
-              #ede8d080
+              #ffffff
               `,
             }}
           />

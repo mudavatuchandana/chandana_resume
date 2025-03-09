@@ -49,11 +49,11 @@ const JobItem = ({ job }: { job: any }) => {
 const JobsCard = () => {
   return (
     <CardWrapper>
-      <div className="static h-full flex flex-col gap-6 p-8 justify-start">
+      <div className="static h-full flex flex-col gap-4 p-8 justify-start">
         <div className="flex flex-col items-start gap-1">
-          <h4 className="text-xs font-medium opacity-60 uppercase">
+          {/* <h4 className="text-xs font-medium opacity-60 uppercase">
             6 Years of
-          </h4>
+          </h4> */}
           <h1 className="text-2xl font-medium dark:text-black text-black uppercase opacity-90 text-center">
             Experience
           </h1>

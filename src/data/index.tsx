@@ -271,7 +271,7 @@ export const layouts = {
         x: 0,
         y: 1,
         w: 4,
-        h: 6,
+        h: 7,
         isResizable: false,
       },
       {

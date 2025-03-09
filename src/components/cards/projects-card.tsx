@@ -13,6 +13,7 @@ const projectsData: Project[] = [
   {
     title:
       "Network Intrusion Detection System using Multi Model Decision Trees and Phishing Detection using ML",
+    link: "https://example.com/network-intrusion", // Add the hyperlink here
     date: "Aug 2023 - Dec 2023",
     details: [
       "Developed an IDS using Decision Tree Classifier with 99% accuracy on the NSL-KDD dataset, enhancing cyber-attack detection.",
@@ -25,6 +26,7 @@ const projectsData: Project[] = [
   {
     title:
       "Twitter Analysis Using MapReduce and comparison with Serial Execution",
+    link: "https://example.com/twitter-analysis",
     date: "Jan 2023 - Apr 2023",
     details: [
       "Leveraged MapReduce for parallel processing to efficiently analyze and cluster health-related tweets, improving big data handling.",
@@ -37,6 +39,7 @@ const projectsData: Project[] = [
   {
     title:
       "Medical Application for Leukemia Patients using Deep Learning and Steganography",
+    link: "https://example.com/leukemia-app",
     date: "Jan 2023 - Apr 2023",
     details: [
       "Created a web-based medical application using deep learning and steganography for leukemia diagnosis.",
@@ -56,8 +59,16 @@ const ProjectItem = ({ project }: { project: Project }) => {
       {/* Project Title and Date */}
       <div className="flex flex-col gap-1">
         <h1 className="text-2xl md:text-3xl font-medium dark:text-black text-black opacity-90">
-          {title}
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            {project.title}
+          </a>
         </h1>
+
         <h5 className="text-xs md:text-sm font-medium dark:text-black text-black opacity-65">
           {date}
         </h5>
@@ -81,14 +92,14 @@ const ProjectItem = ({ project }: { project: Project }) => {
 const JobsCard = () => {
   return (
     <CardWrapper>
-      <div className="static h-full flex flex-col gap-6 p-8 justify-start">
+      <div className="static h-full flex flex-col gap-4 p-8 justify-start">
         {/* Section Title */}
         <div className="flex flex-col items-start gap-1">
-          <h4 className="text-xs font-medium opacity-60 uppercase">
+          {/* <h4 className="text-xs font-medium opacity-60 uppercase">
             Academic Projects
-          </h4>
+          </h4> */}
           <h1 className="text-2xl font-medium dark:text-black text-black uppercase opacity-90">
-            Experience
+            Academic Projects
           </h1>
         </div>
 
