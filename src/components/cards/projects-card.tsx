@@ -7,6 +7,7 @@ type Project = {
   date: string;
   details: string[];
   techStack: string;
+  link: string;
 };
 
 const projectsData: Project[] = [
