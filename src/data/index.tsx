@@ -318,7 +318,7 @@ export const layouts = {
         i: "codepen",
         x: 0,
         y: 19,
-        w: 2,
+        w: 4,
         h: 3,
         isResizable: false,
       },

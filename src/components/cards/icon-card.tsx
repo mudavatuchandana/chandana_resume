@@ -41,7 +41,7 @@ const IconCard = ({ title, link }: { title: string; link: string }) => {
       <div className="flex items-center justify-center w-full h-full opacity-80 hover:opacity-100 transition-opacity relative z-10">
         <a
           className="w-[55%] h-[55%] flex items-center justify-center rounded-3xl"
-          href={link}
+          href={title === "Email" ? `mailto:${link}` : link} // Use mailto: for email
           target="_blank"
           rel="noopener noreferrer"
         >

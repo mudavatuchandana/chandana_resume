@@ -134,7 +134,10 @@ const Grid = () => {
           }}
         >
           <BlurFade delay={0.26}>
-            <IconCard title="Github" link="https://github.com/" />
+            <IconCard
+              title="Github"
+              link="https://github.com/mudavatuchandana"
+            />
           </BlurFade>
         </div>
         <div
