@@ -14,7 +14,7 @@ const projectsData: Project[] = [
   {
     title:
       "Network Intrusion Detection System using Multi Model Decision Trees and Phishing Detection using ML",
-    link: "https://example.com/network-intrusion", // Add the hyperlink here
+    link: "/pdf/network_intrusion.pdf", // Add the hyperlink here
     date: "Aug 2023 - Dec 2023",
     details: [
       "Developed an IDS using Decision Tree Classifier with 99% accuracy on the NSL-KDD dataset, enhancing cyber-attack detection.",
@@ -27,7 +27,7 @@ const projectsData: Project[] = [
   {
     title:
       "Twitter Analysis Using MapReduce and comparison with Serial Execution",
-    link: "https://example.com/twitter-analysis",
+    link: "/pdf/twitter_analysis.pdf",
     date: "Jan 2023 - Apr 2023",
     details: [
       "Leveraged MapReduce for parallel processing to efficiently analyze and cluster health-related tweets, improving big data handling.",
@@ -40,7 +40,7 @@ const projectsData: Project[] = [
   {
     title:
       "Medical Application for Leukemia Patients using Deep Learning and Steganography",
-    link: "https://example.com/leukemia-app",
+    link: "/pdf/medical_lukemia.pdf",
     date: "Jan 2023 - Apr 2023",
     details: [
       "Created a web-based medical application using deep learning and steganography for leukemia diagnosis.",
